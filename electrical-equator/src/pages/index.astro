@@ -1,15 +1,115 @@
----
----
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
 		<title>Guilherme Portfolio</title>
+		<style>
+			/* Estilo Geral */
+			body {
+				background-color: #f3e7dd; /* Fundo bege outonal */
+				color: #4e3b31; /* Texto castanho escuro */
+				font-family: 'Georgia', serif;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+
+			/* Nave Bar */
+			nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2rem;
+				background-color: #eedac8; /* Fundo suave */
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+			}
+			nav a {
+				color: #5c4033; /* Castanho médio */
+				text-decoration: none;
+				margin: 0 1rem;
+				font-weight: bold;
+				font-size: 1rem;
+			}
+			nav a:hover {
+				color: #4e3b31; /* Castanho mais escuro no hover */
+			}
+			nav .name {
+				font-size: 2rem; /* Nome maior */
+				font-weight: bold;
+				margin-left: auto;
+				color: #8c5a4a; /* Castanho médio */
+			}
+
+			/* Título Principal */
+			h1 {
+				font-size: 5rem;
+				margin: 2rem 0 0.5rem 0;
+				color: #8c5a4a; /* Castanho médio */
+				font-weight: bold;
+			}
+
+			/* Seção de "Sobre" */
+			h2 {
+				font-size: 1.2rem;
+				color: #5c4033; /* Castanho mais escuro */
+				margin-top: 1rem;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			p {
+				max-width: 600px;
+				margin: 0 auto;
+				line-height: 1.8;
+				color: #704c3c; /* Castanho moderado */
+				font-size: 1rem;
+			}
+			a {
+				color: #8c5a4a;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 0.9rem;
+			}
+			a:hover {
+				color: #5c4033;
+			}
+
+			/* Rodapé */
+			footer {
+				margin-top: 2rem;
+				font-size: 0.8rem;
+				color: #704c3c;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>oi</h1>
+		<!-- Navegação -->
+		<nav>
+			<a href="/" class="name">Guilherme</a>
+			<div>
+				<a href="/">/home</a>
+				<a href="/about">/about</a>
+				<a href="/blog">/blog</a>
+				<a href="/theme">/theme</a>
+			</div>
+		</nav>
+
+		<!-- Título -->
+		<h1>Guilherme</h1>
+
+		<!-- Seção de Sobre -->
+		<section>
+			<h2>About</h2>
+			<p>
+				Hi, I'm Guilherme. I'm a passionate learner with a love for languages, traveling, 
+				photography, and exploring the world of technology. 
+			</p>
+			<p><a href="/about">More info...</a></p>
+		</section>
+
+		<!-- Rodapé -->
+		<footer>
+			<p>Made by Guilherme © 2024</p>
+		</footer>
 	</body>
 </html>

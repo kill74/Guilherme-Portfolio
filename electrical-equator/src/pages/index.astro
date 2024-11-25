@@ -43,6 +43,20 @@
       margin: 2rem 0 0.5rem 0;
       color: #8c5a4a;
       font-weight: bold;
+      opacity: 0; /* Inicialmente invisível */
+      transform: translateY(20px); /* Deslocado para baixo */
+      animation: fadeSlideIn 1.5s ease-out forwards; /* Aplica a animação */
+    }
+
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h2 {
@@ -73,7 +87,7 @@
     }
 
     footer {
-      margin-top: 2rem;
+      margin-top: 100px;
       font-size: 0.8rem;
       color: #704c3c;
     }
@@ -93,37 +107,17 @@
 </head>
 <body>
   <nav>
-    <a href="/">/home</a>
-    <a href="/about">/about</a>
-    <a href="/blog">/blog</a>
-    <a href="/theme">/theme</a>
+    <a href="https://github.com/kill74">Github</a>
+		<a href="https://www.linkedin.com/in/guilherme-sales-35a580299/">Linkedin</a>
   </nav>
 
   <h1>Guilherme</h1>
-
+  <br>  <br>  <br>  <br>  
   <section>
     <h2>About</h2>
-    <p>
-      Hi, I'm Guilherme. I'm a passionate learner with a love for languages, traveling,
-      photography, and exploring the world of technology.
-    </p>
-    <p><a href="/about">More info...</a></p>
-  </section>
-
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2</p>
-      <a href="#">Learn More</a>
-    </div>
-  </section>
-
+		<p>Atualmente, estou no 2º ano da Licenciatura em Desenvolvimento Web e Multimédia, buscando oportunidades para aplicar meus conhecimentos e crescer profissionalmente.<br> Tenho 19 anos e sou apaixonado por tecnologia, design e criação de experiências digitais.</p>
+    <p><a href="#moreinfo">More info...</a></p>
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
   <footer>
     <p>Made by Guilherme © 2024</p>
   </footer>

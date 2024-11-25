@@ -1,115 +1,131 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Guilherme Portfolio</title>
-		<style>
-			/* Estilo Geral */
-			body {
-				background-color: #f3e7dd; /* Fundo bege outonal */
-				color: #4e3b31; /* Texto castanho escuro */
-				font-family: 'Georgia', serif;
-				margin: 0;
-				padding: 0;
-				text-align: center;
-			}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #f3e7dd;
+      color: #4e3b31;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-			/* Nave Bar */
-			nav {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 1rem 2rem;
-				background-color: #eedac8; /* Fundo suave */
-				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-			}
-			nav a {
-				color: #5c4033; /* Castanho médio */
-				text-decoration: none;
-				margin: 0 1rem;
-				font-weight: bold;
-				font-size: 1rem;
-			}
-			nav a:hover {
-				color: #4e3b31; /* Castanho mais escuro no hover */
-			}
-			nav .name {
-				font-size: 2rem; /* Nome maior */
-				font-weight: bold;
-				margin-left: auto;
-				color: #8c5a4a; /* Castanho médio */
-			}
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #eedac8;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
 
-			/* Título Principal */
-			h1 {
-				font-size: 5rem;
-				margin: 2rem 0 0.5rem 0;
-				color: #8c5a4a; /* Castanho médio */
-				font-weight: bold;
-			}
+    nav a {
+      color: #5c4033;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
 
-			/* Seção de "Sobre" */
-			h2 {
-				font-size: 1.2rem;
-				color: #5c4033; /* Castanho mais escuro */
-				margin-top: 1rem;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-			}
-			p {
-				max-width: 600px;
-				margin: 0 auto;
-				line-height: 1.8;
-				color: #704c3c; /* Castanho moderado */
-				font-size: 1rem;
-			}
-			a {
-				color: #8c5a4a;
-				text-decoration: none;
-				font-weight: bold;
-				font-size: 0.9rem;
-			}
-			a:hover {
-				color: #5c4033;
-			}
+    nav a:hover {
+      color: #4e3b31;
+    }
 
-			/* Rodapé */
-			footer {
-				margin-top: 2rem;
-				font-size: 0.8rem;
-				color: #704c3c;
-			}
-		</style>
-	</head>
-	<body>
-		<!-- Navegação -->
-		<nav>
-			<a href="/" class="name">Guilherme</a>
-			<div>
-				<a href="/">/home</a>
-				<a href="/about">/about</a>
-				<a href="/blog">/blog</a>
-				<a href="/theme">/theme</a>
-			</div>
-		</nav>
+    h1 {
+      font-size: 6rem;
+      margin: 2rem 0 0.5rem 0;
+      color: #8c5a4a;
+      font-weight: bold;
+    }
 
-		<!-- Título -->
-		<h1>Guilherme</h1>
+    h2 {
+      font-size: 1.2rem;
+      color: #5c4033;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-		<!-- Seção de Sobre -->
-		<section>
-			<h2>About</h2>
-			<p>
-				Hi, I'm Guilherme. I'm a passionate learner with a love for languages, traveling, 
-				photography, and exploring the world of technology. 
-			</p>
-			<p><a href="/about">More info...</a></p>
-		</section>
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #704c3c;
+      font-size: 1rem;
+    }
 
-		<!-- Rodapé -->
-		<footer>
-			<p>Made by Guilherme © 2024</p>
-		</footer>
-	</body>
+    a {
+      color: #8c5a4a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    a:hover {
+      color: #5c4033;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #704c3c;
+    }
+
+    .projects {
+      margin-top: 2rem;
+    }
+
+    .project {
+      background-color: #eedac8;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">/home</a>
+    <a href="/about">/about</a>
+    <a href="/blog">/blog</a>
+    <a href="/theme">/theme</a>
+  </nav>
+
+  <h1>Guilherme</h1>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Hi, I'm Guilherme. I'm a passionate learner with a love for languages, traveling,
+      photography, and exploring the world of technology.
+    </p>
+    <p><a href="/about">More info...</a></p>
+  </section>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of Project 1</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of Project 2</p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made by Guilherme © 2024</p>
+  </footer>
+</body>
 </html>
